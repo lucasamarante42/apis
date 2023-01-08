@@ -17,7 +17,7 @@ from corsheaders.defaults import default_headers
 # from sentry_sdk.integrations.django import DjangoIntegration
 
 # sentry_sdk.init(
-#     dsn="https://e3d347cf68bc494099e3840c1e32187e@o4504464867655680.ingest.sentry.io/4504464869425152",
+#     dsn="URL DO PROJETO NO SENTRY",
 #     integrations=[
 #         DjangoIntegration(),
 #     ]
@@ -162,7 +162,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ.get('MYSQL_DATABASE_NAME', 'challengeseazone'),
         'USER': os.environ.get('MYSQL_DATABASE_USER', 'root'),
-        'PASSWORD': os.environ.get('MYSQL_DATABASE_PASSWORD', 'evangelho19'),
+        'PASSWORD': os.environ.get('MYSQL_DATABASE_PASSWORD', 'senha'),
         'HOST':  os.environ.get('MYSQL_DATABASE_HOST', 'localhost'),
         'PORT': os.environ.get('MYSQL_DATABASE_PORT', '3306')
 	}
