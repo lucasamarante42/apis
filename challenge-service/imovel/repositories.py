@@ -27,3 +27,16 @@ class ImovelRepositories():
 	@staticmethod
 	def rp_get_in_bulk(lst_ids):
 		return Imovel.objects.in_bulk(id_list=lst_ids, field_name='id')
+
+	@staticmethod
+	def rp_create_obj(dict_data=None):
+		return Imovel(codigo_imovel=dict_data.get('codigo_imovel'),
+						limite_hospede=dict_data.get('limite_hospede'),
+						quantidade_banheiro=dict_data.get('quantidade_banheiro'),
+						aceita_pet=dict_data.get('aceita_pet'),
+						valor_limpeza=dict_data.get('valor_limpeza'),
+						data_ativacao=dict_data.get('data_ativacao'))
+
+	@staticmethod
+	def rp_save_bulk_create(list_obj=None):
+		Imovel.objects.bulk_create(list_obj)

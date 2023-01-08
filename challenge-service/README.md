@@ -77,4 +77,19 @@ Authorization Grant Type: Resource owner password-based
 Copiar os valores de CLIENT_ID e CLIENT_SECRET nas variáveis de ambiente do settings do challenge-service
 </blockquote>
 
+<h3><b>EXECUÇÃO DOS CASOS DE TESTE</b></h3>
 
+Para rodar as classes implementadas de testes
+<blockquote>
+python manage.py test
+</blockquote>
+
+Foi gerado de forma automatizada uma fixture (seeder) para criar registros na base de dados utilizando a lib django-seed
+
+<blockquote>
+python3 manage.py seed imovel --number=15
+python3 manage.py seed anuncio --number=15
+python3 manage.py seed reserva --number=15
+</blockquote>
+
+Foi utilizado a lib para criação de logs: drf-tracking

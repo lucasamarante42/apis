@@ -27,3 +27,13 @@ class AnuncioRepositories():
 	@staticmethod
 	def rp_get_in_bulk(lst_ids):
 		return Anuncio.objects.in_bulk(id_list=lst_ids, field_name='id')
+
+	@staticmethod
+	def rp_create_obj(dict_data=None):
+		return Anuncio(id_imovel=dict_data.get('id_imovel'),
+						plataforma_publicada=dict_data.get('plataforma_publicada'),
+						taxa_plataforma=dict_data.get('taxa_plataforma'))
+
+	@staticmethod
+	def rp_save_bulk_create(list_obj=None):
+		Anuncio.objects.bulk_create(list_obj)

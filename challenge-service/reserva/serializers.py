@@ -55,6 +55,14 @@ class ReservaSerializer(serializers.ModelSerializer):
 		fields = '__all__'
 		extra_kwargs = dict_extra_kwargs
 
+	def validate(self, data):
+		"""
+		Check that the start is before the stop.
+		"""
+		if data['data_check_in'] > data['data_check_out']:
+			raise serializers.ValidationError("A data de check-in não pode ser maior que a data de check-out!")
+		return data
+
 class BulkReservaSerializer(BulkSerializerMixin, serializers.ModelSerializer):
 
 	class Meta(object):

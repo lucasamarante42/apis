@@ -58,7 +58,8 @@ INSTALLED_APPS = [
 	'rest_framework_tracking',
     'imovel',
     'anuncio',
-    'reserva'
+    'reserva',
+    'django_seed',
 ]
 
 AUTHENTICATION_BACKENDS = (

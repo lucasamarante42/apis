@@ -23,3 +23,5 @@ cryptography==2.8
 wheel==0.34.2
 pandas
 holidays==0.13
+django-seed==0.3.1
+psycopg2-binary==2.9.5

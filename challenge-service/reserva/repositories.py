@@ -27,3 +27,17 @@ class ReservaRepositories():
 	@staticmethod
 	def rp_get_in_bulk(lst_ids):
 		return Reserva.objects.in_bulk(id_list=lst_ids, field_name='id')
+
+	@staticmethod
+	def rp_create_obj(dict_data=None):
+		return Reserva(codigo_reserva=dict_data.get('codigo_reserva'),
+						id_anuncio=dict_data.get('id_anuncio'),
+						data_check_in=dict_data.get('data_check_in'),
+						data_check_out=dict_data.get('data_check_out'),
+						preco_total=dict_data.get('preco_total'),
+						comentario=dict_data.get('comentario'),
+						quantidade_hospede=dict_data.get('quantidade_hospede'))
+
+	@staticmethod
+	def rp_save_bulk_create(list_obj=None):
+		Reserva.objects.bulk_create(list_obj)
