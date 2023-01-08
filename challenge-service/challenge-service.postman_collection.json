@@ -1,0 +1,1196 @@
+{
+	"info": {
+		"_postman_id": "c5569a72-2898-4f7f-b284-59427f84c919",
+		"name": "challenge-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3452876"
+	},
+	"item": [
+		{
+			"name": "imovel",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/imovel",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/imovel",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"imovel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/imovel/create-multiple",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n{\n    \"codigo_imovel\": \"ABC123\",\n\t\"limite_hospede\": 10,\n\t\"quantidade_banheiro\": 3,\n\t\"aceita_pet\": true,\n\t\"valor_limpeza\": 100.00,\n\t\"data_ativacao\": \"2023-01-30\"\n},\n{\n    \"codigo_imovel\": \"PLR86\",\n\t\"limite_hospede\": 5,\n\t\"quantidade_banheiro\": 2,\n\t\"aceita_pet\": true,\n\t\"valor_limpeza\": 100.00,\n\t\"data_ativacao\": \"2023-01-30\"\n},\n{\n    \"codigo_imovel\": \"ABC789\",\n\t\"limite_hospede\": 2,\n\t\"quantidade_banheiro\": 1,\n\t\"aceita_pet\": true,\n\t\"valor_limpeza\": 50.00,\n\t\"data_ativacao\": \"2023-01-30\"\n}\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/imovel/create-multiple",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"imovel",
+								"create-multiple"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/imovel/1",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"codigo_imovel\": \"DEF123\",\n\t\"limite_hospede\": 10,\n\t\"quantidade_banheiro\": 3,\n\t\"aceita_pet\": true,\n\t\"valor_limpeza\": 100.00,\n\t\"data_ativacao\": \"2023-01-30\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/imovel/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"imovel",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/imovel/3",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/imovel/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"imovel",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/imovel",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"codigo_imovel\": \"JGK403\",\n\t\"limite_hospede\": 7,\n\t\"quantidade_banheiro\": 2,\n\t\"aceita_pet\": true,\n\t\"valor_limpeza\": 100.00,\n\t\"data_ativacao\": \"2023-01-30\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/imovel",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"imovel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reserva",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/reserva",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/reserva",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"reserva"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/reserva/create",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_anuncio\": 2,\n\t\"data_check_in\": \"2023-01-27\",\n    \"data_check_out\": \"2023-01-23\",\n\t\"preco_total\": 100.00,\n\t\"comentario\": \"OBSERVAÇÕES\",\n\t\"quantidade_hospede\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/reserva",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"reserva"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/reserva/3",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/reserva/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"reserva",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "anuncio",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/anuncio",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/anuncio",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"anuncio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/anuncio/create-multiple",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n{\n    \"id_imovel\": 1,\n\t\"plataforma_publicada\": \"KGU\",\n\t\"taxa_plataforma\": 100.00\n},\n{\n    \"id_imovel\": 2,\n\t\"plataforma_publicada\": \"EW\",\n\t\"taxa_plataforma\": 100.00\n}\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/anuncio/create-multiple",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"anuncio",
+								"create-multiple"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/anuncio/update-bulk",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n{\n    \"id\": 1,\n    \"id_imovel\": 1,\n\t\"plataforma_publicada\": \"IOK\",\n\t\"taxa_plataforma\": 100.00\n},\n{\n    \"id\": 2,\n    \"id_imovel\": 2,\n\t\"plataforma_publicada\": \"AirBN\",\n\t\"taxa_plataforma\": 100.00\n}\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/anuncio/update-bulk",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"anuncio",
+								"update-bulk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/anuncio/1",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_imovel\": 1,\n\t\"plataforma_publicada\": \"AirBN\",\n\t\"taxa_plataforma\": 100.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/anuncio/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"anuncio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8002/api/challenge/anuncio",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "challenge7",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "lucas.amarante42",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "cUoLqqKCURa40eUboM23r0QiluMRqmJtp91wiXfbLFiJQGmVNxthBRKdWJXVVKr11PHCpj7UlGNmtR0SueP7DZ4aVvAAUCUia010FONPY1zTJGz8qrnY6f3KKk98q1um",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "tshJBHqLqKlNRPdAChzIDyyBKakT3i9BLB2C3VAq",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer ",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://127.0.0.1:8002/authenticate/token/",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "read write groups",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_imovel\": 1,\n\t\"plataforma_publicada\": \"RFD\",\n\t\"taxa_plataforma\": 100.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8002/api/challenge/anuncio",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"challenge",
+								"anuncio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -92,4 +92,10 @@ python3 manage.py seed anuncio --number=15
 python3 manage.py seed reserva --number=15
 </blockquote>
 
+Rodando a aplicação via Docker
+<blockquote>
+docker build -t challenge-service . <br>
+docker run -d -p 7779:8002 challenge-service
+</blockquote>
+
 Foi utilizado a lib para criação de logs: drf-tracking
