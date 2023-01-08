@@ -92,6 +92,11 @@ python3 manage.py seed anuncio --number=15
 python3 manage.py seed reserva --number=15
 </blockquote>
 
+Para rodar o script seed criado:
+<blockquote>
+python3 seed.py
+</blockquote>
+  
 Rodando a aplicação via Docker
 <blockquote>
 docker build -t challenge-service . <br>
